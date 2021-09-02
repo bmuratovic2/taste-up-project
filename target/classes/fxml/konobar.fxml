@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.KonobarController">
+    <stylesheets>
+        <URL value="@/css/main.css" />
+    </stylesheets>
+    <tabs>
+        <Tab fx:id="color" text="%tables">
+            <content>
+                <AnchorPane fx:id="tab1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff0b3" height="235.0" layoutX="141.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="319.0" />
+                        <Circle fx:id="cetvrtiId" fill="#cc6600" layoutX="189.0" layoutY="183.0" onMouseClicked="#cetvrtiAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="petiId" fill="#cc6600" layoutX="300.0" layoutY="183.0" onMouseClicked="#petiAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="devetiId" fill="#cc6600" layoutX="412.0" layoutY="253.0" onMouseClicked="#devetiAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="sedmiId" fill="#cc6600" layoutX="189.0" layoutY="253.0" onMouseClicked="#sedmiAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="sestiId" fill="#cc6600" layoutX="412.0" layoutY="183.0" onMouseClicked="#sestiAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="treciId" fill="#cc6600" layoutX="412.0" layoutY="122.0" onMouseClicked="#treciAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="prviId" fill="#cc6600" layoutX="189.0" layoutY="122.0" onMouseClicked="#prviAction" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Rectangle fx:id="drugiId" arcHeight="5.0" arcWidth="5.0" fill="#cc6600" height="28.0" layoutX="262.0" layoutY="108.0" onMouseClicked="#drugiAction" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+                        <Rectangle fx:id="osmiId" arcHeight="5.0" arcWidth="5.0" fill="#cc6600" height="28.0" layoutX="262.0" layoutY="239.0" onMouseClicked="#osmiAction" stroke="BLACK" strokeType="INSIDE" width="76.0" />
+                        <Label fx:id="text" layoutX="112.0" layoutY="28.0" text="%rezervation">
+                            <font>
+                                <Font name="Rockwell" size="17.0" />
+                            </font></Label>
+                        <Button fx:id="btnSingOut" layoutX="570.0" layoutY="1.0" mnemonicParsing="false" onAction="#krajAction" prefHeight="26.0" prefWidth="31.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="color1" onSelectionChanged="#tab2" text="%menu">
+            <content>
+                <AnchorPane fx:id="tab2" minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="550.0">
+                    <children>
+                        <BorderPane fx:id="mainPane" layoutX="133.0" layoutY="81.0" prefHeight="230.0" prefWidth="340.0" />
+                        <Button layoutX="147.0" layoutY="41.0" mnemonicParsing="false" onAction="#burgeriAction" text="%burgeri" />
+                        <Button layoutX="225.0" layoutY="41.0" mnemonicParsing="false" onAction="#sendwichAction" text="%sendwich" />
+                        <Button layoutX="319.0" layoutY="41.0" mnemonicParsing="false" onAction="#pizzaAction" text="%pizza" />
+                        <Button layoutX="387.0" layoutY="41.0" mnemonicParsing="false" onAction="#drinksAction" text="%pice" />
+                        <Button layoutX="570.0" layoutY="1.0" mnemonicParsing="false" onAction="#krajAction" prefHeight="26.0" prefWidth="31.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="color2" text="%order">
+            <content>
+                <AnchorPane fx:id="tab3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ListView fx:id="lvNarudba" layoutX="130.0" layoutY="14.0" prefHeight="334.0" prefWidth="351.0" />
+                  <Label layoutX="231.0" layoutY="41.0" text="%yourOrder">
+                        <font>
+                            <Font name="Rockwell" size="17.0" />
+                        </font>
+                  </Label>
+                  <ListView fx:id="listOrder" layoutX="157.0" layoutY="69.0" prefHeight="241.0" prefWidth="300.0" />
+                  <Button layoutX="504.0" layoutY="302.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" text="%confirm" />
+                  <Button layoutX="34.0" layoutY="302.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" text="%cancel" />
+                        <Button layoutX="570.0" layoutY="1.0" mnemonicParsing="false" onAction="#krajAction" prefHeight="26.0" prefWidth="31.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="color3" text="%bill">
+            <content>
+                <AnchorPane fx:id="tab4" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView layoutX="169.0" layoutY="14.0" prefHeight="342.0" prefWidth="262.0" />
+                  <Button layoutX="480.0" layoutY="303.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" text="%finish" />
+                   <Button  layoutX="570.0" layoutY="1.0" mnemonicParsing="false" onAction="#krajAction" prefHeight="26.0" prefWidth="31.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                       <graphic>
+                           <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                   <Image url="@/images/exit.png" />
+                               </image>
+                           </ImageView>
+                       </graphic>
+                   </Button>
+               </children></AnchorPane>
+            </content>
+        </Tab>
+
+    </tabs>
+</TabPane>

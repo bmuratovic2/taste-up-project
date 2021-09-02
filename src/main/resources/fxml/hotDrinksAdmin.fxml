@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane layoutY="-2.0" prefHeight="214.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.childrenAdminController.HotDrinksAdminController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.6" minWidth="10.0" prefWidth="172.6" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="98.4" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="%esspreso">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%late" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%macchiato" GridPane.rowIndex="2">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%hotChocolate" GridPane.rowIndex="3">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%tea" GridPane.rowIndex="4">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+      <TextField fx:id="tfEspresso" GridPane.columnIndex="1" />
+      <TextField fx:id="tfLate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="tfMacchiato" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="tfHotCh" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="tfTea" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    </children>
+</GridPane>

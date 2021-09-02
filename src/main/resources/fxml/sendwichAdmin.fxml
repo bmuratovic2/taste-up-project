@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.childrenAdminController.SendwichAdminController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.4" minWidth="10.0" prefWidth="213.4" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="114.20000000000002" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label prefHeight="21.0" prefWidth="160.0" text="%tuna" textAlignment="CENTER">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%bbq" GridPane.rowIndex="3">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%chickenSendwich" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%pepper" GridPane.rowIndex="2">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font>
+        </Label>
+
+
+        <Label text="%vegetar" GridPane.rowIndex="4">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font>
+        </Label>
+      <TextField fx:id="tfTuna" GridPane.columnIndex="1" />
+      <TextField fx:id="tfChickenSendw" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="tfPepperEgg" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="tfBBQ" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="tfVegeterianSendw" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    </children>
+</GridPane>

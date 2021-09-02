@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="189.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.childrenKonobarController.BurgerKonobarController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.00001525878906" minWidth="10.0" prefWidth="182.8" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="43.19999999999999" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="94.40000000000003" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label prefHeight="22.0" prefWidth="180.0" text="%chickenBurger" textAlignment="CENTER">
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%cheeseBurger" GridPane.rowIndex="3">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%doubleBurger" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font></Label>
+        <Label text="%regularBurger" GridPane.rowIndex="2">
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="17.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="ChickengBurgerSpinner" initialValue="0" max="100" min="0" GridPane.columnIndex="2">      <editable>true</editable>
+        </Spinner>
+        <Spinner fx:id="DoubleBurgerSpinner" initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="1">      <editable>true</editable>
+        </Spinner>
+        <Spinner fx:id="RegularBurgerSpinner" initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="2">      <editable>true</editable>
+        </Spinner>
+        <Spinner fx:id="CheeseBurgerSpinner" initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="3">      <editable>true</editable>
+        </Spinner>
+      <Label fx:id="lbChickenCijena" text="2.50" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lbDoubleCijena" prefHeight="18.0" prefWidth="25.0" text="4.00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lbRegularCijena" text="3.00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lbCheeseCijena" text="3.50" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+    </children>
+</GridPane>

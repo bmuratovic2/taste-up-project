@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane layoutY="-2.0" prefHeight="214.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.childrenKonobarController.HotDrinksKonobarController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.6" minWidth="10.0" prefWidth="157.4" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="45.599999999999994" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="80.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="%esspreso">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%late" GridPane.rowIndex="1">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%macchiato" GridPane.rowIndex="2">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%hotChocolate" GridPane.rowIndex="3">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+        <Label text="%tea" GridPane.rowIndex="4">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font name="Rockwell Bold" size="16.0" />
+            </font></Label>
+      <Spinner initialValue="0" max="100" min="0" GridPane.columnIndex="2">      <editable>true</editable>
+      </Spinner>
+      <Spinner initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="1">      <editable>true</editable>
+      </Spinner>
+      <Spinner initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="2">      <editable>true</editable>
+      </Spinner>
+      <Spinner initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="3">      <editable>true</editable>
+      </Spinner>
+      <Spinner initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="4">      <editable>true</editable>
+      </Spinner>
+      <Label text="2.00" GridPane.columnIndex="1" fx:id="lbEspresso">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="2.50" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="lbLate">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="3.00" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="lbMacchiato">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="3.50" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="lbHotCh">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="2.00" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="lbTea">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+    </children>
+</GridPane>

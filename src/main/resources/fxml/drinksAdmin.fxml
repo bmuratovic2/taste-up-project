@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nrs.tim5.projekat.childrenAdminController.DrinkAdminController">
+   <children>
+      <ToggleButton fx:id="tog1" layoutX="111.0" layoutY="15.0" mnemonicParsing="false" onAction="#coldAction" text="%cold" />
+      <ToggleButton fx:id="tog2" layoutX="159.0" layoutY="15.0" mnemonicParsing="false" onAction="#hotAction" text="%hot" />
+      <BorderPane fx:id="pica" layoutX="31.0" layoutY="52.0" prefHeight="202.0" prefWidth="264.0" />
+   </children>
+   
+</AnchorPane>
